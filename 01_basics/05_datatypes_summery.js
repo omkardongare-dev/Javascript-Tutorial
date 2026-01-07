@@ -40,3 +40,31 @@ console.log(typeof myFunction);
 console.log(typeof heros);
 
 // https://262.ecma-international.org/13.0/index.html#sec-typeof-operator
+
+
+
+
+// ********************** Memory in javascript ********************* //
+
+// # Stack(Primitive) memory, # Heap(Non-Primitive) memory
+
+let myYoutubename = "omkarsoftteccom"
+
+let anothername = myYoutubename
+anothername = "chaiwithcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    name: "omkar",
+    email: "omkar951@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "omkar@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
